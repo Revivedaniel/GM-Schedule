@@ -13,125 +13,125 @@
         <ul>
             <!--Headers of the columns-->
             <li id="mainHeaders">
-                <p>Task</p>
-                <p>Description</p>
-                <p>Priority</p>
-                <p>Frequency</p>
-                <p>Input</p>
+                <p class="task">Task</p>
+                <p class="description">Description</p>
+                <p class="priority">Priority</p>
+                <p class="frequency">Frequency</p>
+                <p class="input">Input</p>
             </li>
             <!--Line 1-->
             <li id="line1">
-                <p>GM Holds</p>
-                <p>Process orders in GM hold queue</p>
-                <p>1</p>
-                <p>Daily</p>
-                <input type="text" name="GMHolds" id="GMHoldsInput">
+                <p class="task">GM Holds</p>
+                <p class="description">Process orders in GM hold queue</p>
+                <p class="priority">1</p>
+                <p class="frequency">Daily</p>
+                <input type="text" name="GMHolds" id="GMHoldsInput" class="input">
             </li>
             <!--Line 2-->
             <li id="line2">
-                <p>MRP/PO</p>
-                <span>
+                <p class="task">MRP/PO</p>
+                <span class="description">
                     <p>Process MRP and Create POs</p>
                     <p>-Columbia</p>
                     <p>-Arizona</p>
                 </span>
-                <p>2</p>
-                <span>
+                <p class="priority">2</p>
+                <span class="frequency">
                     <p>-Daily</p>
                     <p>-Bi-Monthly</p>
                 </span>
-                <span id="MRP">
+                <span id="MRP" class="input doubleInput">
                     <input type="checkbox" name="MRP" id="MRPInput">
                     <input type="text" name="AZMRP" id="AZMRPInput">
                 </span>
             </li>
             <!--Line 3-->
             <li id="line3">
-                <p>SDO</p>
-                <p>Place orders on EPIC and create POs <br>in AX for SDO Cores recieved</p>
-                <p>3</p>
-                <p>Daily</p>
-                <input type="checkbox" name="SDO" id="SDOInput">
+                <p class="task">SDO</p>
+                <p class="description">Place orders on EPIC and create POs <br>in AX for SDO Cores recieved</p>
+                <p class="priority">3</p>
+                <p class="frequency">Daily</p>
+                <input type="checkbox" name="SDO" id="SDOInput" class="input">
             </li>
             <!--Line 4-->
             <li id="line4">
-                <p>Backorders</p>
-                <span>
+                <p class="task">Backorders</p>
+                <span class="description">
                     <p>Identify Backorders</p>
                     <p>-Check alias chain to possibly fill</p>
                     <p>Send to ESC Locator (Warranty Orders only)</p>
                 </span>
-                <p>4</p>
-                <p>Daily</p>
-                <input type="checkbox" name="backorders" id="backordersInput">
+                <p class="priority">4</p>
+                <p class="frequency">Daily</p>
+                <input type="checkbox" name="backorders" id="backordersInput" class="input">
             </li>
             <!--Line 5-->
             <li id="line5">
-                <p>GM Escalations</p>
-                <span>
+                <p class="task">GM Escalations</p>
+                <span class="description">
                     <p>Submit escalation orders</p>
                     <p>Create formated GM Escalations file to send to Sam</p>
                 </span>
-                <p>5</p>
-                <p>Weekly</p>
-                <input type="checkbox" name="Escalations" id="EscalationsInput">
+                <p class="priority">5</p>
+                <p class="frequency">Weekly</p>
+                <input type="checkbox" name="Escalations" id="EscalationsInput" class="input">
             </li>
             <!--Line 6-->
             <li id="line6">
-                <p>Recieving</p>
-                <p>Breakdown pallets into carts of Pallets <br>
+                <p class="task">Recieving</p>
+                <p class="description">Breakdown pallets into carts of Pallets <br>
                     to recieve and transfer
                 </p>
-                <p>6</p>
-                <p>Daily/As Needed</p>
-                <input type="text" name="Recieving" id="RecievingInput">
+                <p class="priority">6</p>
+                <p class="frequency">Daily/As Needed</p>
+                <input type="text" name="Recieving" id="RecievingInput" class="input">
             </li>
             <!--Line 7-->
             <li id="line7">
-                <p>Dis/Hold Requests</p>
-                <p>Create and send list of Dis/Hld items to Ranger Whse</p>
-                <p>7</p>
-                <p>Bi-Monthly</p>
-                <span>
+                <p class="task">Dis/Hold Requests</p>
+                <p class="description">Create and send list of Dis/Hld items to Ranger Whse</p>
+                <p class="priority">7</p>
+                <p class="frequency">Bi-Monthly</p>
+                <span class="input doubleInput">
                     <input type="checkbox" name="DisHold" id="DisHoldInput">
                     <input type="text" name="DisHoldDate" id="DisHoldDateInput">
                 </span>
             </li>
             <!--Line 8-->
             <li id="line8">
-                <p>PO Cleanup</p>
-                <p>Verify remaining parts are active on EPIC</p>
-                <p>9</p>
-                <p>Monthly</p>
-                <span>
+                <p class="task">PO Cleanup</p>
+                <p class="description">Verify remaining parts are active on EPIC</p>
+                <p class="priority">9</p>
+                <p class="frequency">Monthly</p>
+                <span class="input doubleInput">
                     <input type="checkbox" name="POCleanup" id="POCleanupInput">
                     <input type="text" name="POCleanupDate" id="POCleanupDateInput">
                 </span>
             </li>
             <!--Line 9-->
             <li id="line9">
-                <p>GM Emails</p>
-                <span>
+                <p class="task">GM Emails</p>
+                <span class="description">
                     <p>Process emails related to GM</p>
                     <p>-Andwerbacks</p>
                     <p>-Manifests</p>
                     <p>-Blank Dimensions</p>
                 </span>
-                <p>8</p>
-                <p>Daily/As Needed</p>
-                <input type="checkbox" name="GMEmails" id="GMEmailsInput">
+                <p class="priority">8</p>
+                <p class="frequency">Daily/As Needed</p>
+                <input type="checkbox" name="GMEmails" id="GMEmailsInput" class="input">
             </li>
             <!--Line 10-->
             <li id="line10">
-                <p>End Of Day<br>(GM Open Orders)</p>
-                <span>
+                <p class="task">End Of Day<br>(GM Open Orders)</p>
+                <span class="description">
                     <p>-Check postings of all current open orders</p>
                     <p>-Check AZ orders after Fedex leaves to fill w/ C-FG</p>
                     <p>Monitor GM Open orders</p>
                 </span>
-                <p></p>
-                <p>Daily</p>
-                <input type="text" name="EndOfDay" id="EndOfDayInput">
+                <p class="priority"></p>
+                <p class="frequency">Daily</p>
+                <input type="text" name="EndOfDay" id="EndOfDayInput" class="input">
             </li>
             
         </ul>
